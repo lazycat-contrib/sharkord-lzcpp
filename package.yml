@@ -1,0 +1,17 @@
+package: community.lazycat.app.sharkord
+version: 0.0.23
+name: Sharkord
+description: "Self-hosted real-time communication platform - voice, video and screen sharing without the bloat"
+min_os_version: 1.5.0
+homepage: https://github.com/Sharkord/sharkord
+author: sharkord
+permissions:
+  required:
+    - net.internet
+locales:
+  zh:
+    name: Sharkord
+    description: "自托管的实时通信平台 - 语音、视频和屏幕共享，无广告无审查"
+  en:
+    name: Sharkord
+    description: "Self-hosted real-time communication platform - voice, video and screen sharing without the bloat"

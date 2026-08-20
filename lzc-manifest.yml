@@ -1,0 +1,28 @@
+application:
+  subdomain: sharkord
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://sharkord:4991/
+  ingress:
+    - port: 40000
+      protocol: tcp
+    - port: 40000
+      protocol: udp
+
+services:
+  sharkord:
+    # sharkord/sharkord:v0.0.23
+    # upstream: sharkord/sharkord:v0.0.23
+    image: docker.1ms.run/sharkord/sharkord:0.0.23
+    binds:
+      - /lzcapp/var/sharkord:/home/bun/.config/sharkord
+    environment:
+      - SHARKORD_PORT=4991
+      - SHARKORD_WEBRTC_PORT=40000
+
+usage: |
+  首次启动时，Sharkord 会在日志中输出一个安全令牌（token）。
+  这个令牌可以取得服务器的管理员权限，请注意保存，不要泄露。
+  浏览器会直接打开 Sharkord 客户端界面；语音通话需要放行对应的网络端口。

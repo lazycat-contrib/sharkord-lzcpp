@@ -1,4 +1,5 @@
 package: community.lazycat.app.sharkord
+license: MIT
 version: 0.0.25
 name: Sharkord
 description: "Self-hosted real-time communication platform - voice, video and screen sharing without the bloat"

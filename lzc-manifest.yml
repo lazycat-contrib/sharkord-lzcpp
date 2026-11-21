@@ -13,8 +13,8 @@ application:
 services:
   sharkord:
     # sharkord/sharkord:v0.0.23
-    # upstream: docker.io/sharkord/sharkord:v0.0.31
-    image: docker.1ms.run/sharkord/sharkord:v0.0.31
+    # upstream: docker.io/sharkord/sharkord:v0.0.32
+    image: docker.1ms.run/sharkord/sharkord:v0.0.32
     binds:
       - /lzcapp/var/sharkord:/home/bun/.config/sharkord
     environment:
